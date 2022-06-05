@@ -1,23 +1,59 @@
 # -*- coding: utf-8 -*-
 """
-runfile('C:/Users/Charles_Truscott/Desktop/newpalinctwt.py', wdir='C:/Users/Charles_Truscott/Desktop')
-All letters should presumably match from 0 to 18
-All letters should presumably match from 1 to 17
-All letters should presumably match from 2 to 16
-All letters should presumably match from 3 to 15
-All letters should presumably match from 4 to 14
-All letters should presumably match from 5 to 13
-All letters should presumably match from 6 to 12
-All letters should presumably match from 7 to 11
-All letters should presumably match from 20 to 28
-All letters should presumably match from 21 to 27
-All letters should presumably match from 22 to 26
+runfile('C:/Users/Charles_Truscott/Desktop/CharlesTruscottWattersExtraCurricularMITAlgorithmPractice.py', wdir='C:/Users/Charles_Truscott/Desktop')
+All letters should presumably match from 0 to 14
+All letters should presumably match from 1 to 13
+All letters should presumably match from 2 to 12
+All letters should presumably match from 3 to 11
+All letters should presumably match from 4 to 10
+All letters should presumably match from 5 to 9
+All letters should presumably match from 6 to 39
+All letters should presumably match from 7 to 38
+All letters should presumably match from 15 to 61
+All letters should presumably match from 16 to 60
+All letters should presumably match from 17 to 29
+All letters should presumably match from 18 to 72
+All letters should presumably match from 19 to 27
+All letters should presumably match from 20 to 26
+All letters should presumably match from 21 to 25
+All letters should presumably match from 22 to 39
+All letters should presumably match from 23 to 38
+All letters should presumably match from 27 to 72
+All letters should presumably match from 29 to 47
+All letters should presumably match from 30 to 46
+All letters should presumably match from 31 to 70
+All letters should presumably match from 32 to 44
+All letters should presumably match from 33 to 43
+All letters should presumably match from 34 to 42
+All letters should presumably match from 35 to 41
+All letters should presumably match from 36 to 40
+All letters should presumably match from 44 to 71
+All letters should presumably match from 45 to 61
+All letters should presumably match from 46 to 60
+All letters should presumably match from 47 to 59
+All letters should presumably match from 48 to 58
+All letters should presumably match from 49 to 57
+All letters should presumably match from 50 to 56
+All letters should presumably match from 51 to 55
+All letters should presumably match from 56 to 59
+All letters should presumably match from 57 to 58
+All letters should presumably match from 58 to 57
+All letters should presumably match from 59 to 56
+All letters should presumably match from 60 to 46
+All letters should presumably match from 61 to 70
+All letters should presumably match from 62 to 78
+All letters should presumably match from 63 to 77
+All letters should presumably match from 64 to 76
+All letters should presumably match from 65 to 75
+All letters should presumably match from 66 to 74
+All letters should presumably match from 67 to 73
+All letters should presumably match from 68 to 72
+All letters should presumably match from 71 to 72
 Authored by Charles Truscott Watters from scratch finishing up at 7:53 a.m. 6/06/2022 Australian Eastern Standard Time
 Thank you so much MIT for allowing me to do a unit from the world's #1 ranked college in Computer Science and also Mathematics
 Thank you edX.org staff
-List of Found Palindromes (case sensitive): [['None ever reve enoN'], ['one ever reve eno'], ['ne ever reve en'], ['e ever reve e'], [' ever reve '], ['ever reve'], ['ver rev'], ['er re'], ['Also oslA'], ['lso osl'], ['so os']]
-Enjoyed my HarvardX Study which is still valuable to this day ...
-I'm going to be a Python software engineer one day :-D
+List of Found Palindromes (case sensitive): [['Charles SelrahC'], ['harles Selrah'], ['arles Selra'], ['rles Selr'], ['les Sel'], ['es Se'], ['s SelrahC Watters Srettaw Thomas S'], [' SelrahC Watters Srettaw Thomas '], [' Watters Srettaw Thomas Samoht Wallace eCaLlAw '], ['Watters Srettaw Thomas Samoht Wallace eCaLlAw'], ['atters Sretta'], ['tters Srettaw Thomas Samoht Wallace eCaLlAw Truscott TT'], ['ters Sret'], ['ers Sre'], ['rs Sr'], ['s Srettaw Thomas S'], [' Srettaw Thomas '], ['ttaw Thomas Samoht Wallace eCaLlAw Truscott TT'], ['aw Thomas Samoht Wa'], ['w Thomas Samoht W'], [' Thomas Samoht Wallace eCaLlAw Truscott '], ['Thomas Samoht'], ['homas Samoh'], ['omas Samo'], ['mas Sam'], ['as Sa'], ['t Wallace eCaLlAw Truscott T'], [' Wallace eCaLlAw '], ['Wallace eCaLlAw'], ['allace eCaLlA'], ['llace eCaLl'], ['lace eCaL'], ['ace eCa'], ['ce eC'], ['aLlA'], ['Ll'], [''], [''], [''], [' Truscott '], ['Truscott TTOCSURT'], ['ruscott TTOCSUR'], ['uscott TTOCSU'], ['scott TTOCS'], ['cott TTOC'], ['ott TTO'], ['tt TT'], ['TT']]
+
 
 """
 def match_and_mix(list_of_letter_matches_and_positions, string_input):
