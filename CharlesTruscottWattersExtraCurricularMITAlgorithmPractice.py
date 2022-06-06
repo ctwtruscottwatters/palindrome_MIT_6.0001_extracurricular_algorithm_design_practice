@@ -54,7 +54,6 @@ Thank you so much MIT for allowing me to do a unit from the world's #1 ranked co
 Thank you edX.org staff
 List of Found Palindromes (case sensitive): [['Charles SelrahC'], ['harles Selrah'], ['arles Selra'], ['rles Selr'], ['les Sel'], ['es Se'], ['s SelrahC Watters Srettaw Thomas S'], [' SelrahC Watters Srettaw Thomas '], [' Watters Srettaw Thomas Samoht Wallace eCaLlAw '], ['Watters Srettaw Thomas Samoht Wallace eCaLlAw'], ['atters Sretta'], ['tters Srettaw Thomas Samoht Wallace eCaLlAw Truscott TT'], ['ters Sret'], ['ers Sre'], ['rs Sr'], ['s Srettaw Thomas S'], [' Srettaw Thomas '], ['ttaw Thomas Samoht Wallace eCaLlAw Truscott TT'], ['aw Thomas Samoht Wa'], ['w Thomas Samoht W'], [' Thomas Samoht Wallace eCaLlAw Truscott '], ['Thomas Samoht'], ['homas Samoh'], ['omas Samo'], ['mas Sam'], ['as Sa'], ['t Wallace eCaLlAw Truscott T'], [' Wallace eCaLlAw '], ['Wallace eCaLlAw'], ['allace eCaLlA'], ['llace eCaLl'], ['lace eCaL'], ['ace eCa'], ['ce eC'], ['aLlA'], ['Ll'], [''], [''], [''], [' Truscott '], ['Truscott TTOCSURT'], ['ruscott TTOCSUR'], ['uscott TTOCSU'], ['scott TTOCS'], ['cott TTOC'], ['ott TTO'], ['tt TT'], ['TT']]
 
-
 """
 def match_and_mix(list_of_letter_matches_and_positions, string_input):
     list_of_consecutive_numbers = []
@@ -94,6 +93,7 @@ def find_palindrome(string_input):
     matches = []
     Found_Negation = False
     Found_Error = False
+    spaces = 0
     for x in range(0, len(string_input), 1):
         for y in range(len(string_input) - 1, 0, -1):
            #print("{} {}".format(string_input[x], string_input[y]))
@@ -108,12 +108,19 @@ def find_palindrome(string_input):
                        Found_Negation = False
                    else:
                        Found_Negation = True
+                   if string_input[x] == str(" "):
+                       spaces += 1
+                       if string_input[y] == str(" "):
+                           spaces += 1
+                           
                    q += 1
                    r -= 1
                if Found_Negation == False:
                    print("All letters should presumably match from {} to {}".format(temp1, temp2))
-                   found_palindromes.append([string_input[temp1:temp2 + 1]])
-                   break
+                   if spaces % 2 == 0:
+                       found_palindromes.append([string_input[temp1:temp2 + 1]])
+                       spaces = 0
+                       break
                matches += [[string_input[x], x, y]]
     return found_palindromes
 
